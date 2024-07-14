@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #121111;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #C2BABA;
+}
+
+#title {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#new-task {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #242528;
+    border-radius: 5px;
+    border: 2px solid #242528;
+    font-size: 14px;
+    padding-left: 10px; 
+}
+
+#add-btn {
+    width: 60px;
+    height: 40px;
+    margin-left: auto; 
+    background-color: #242528;
+    border-radius: 5px;
+    border: 2px solid #242528;
+    font-size: 14px;
+    color: #C2BABA;
+}
+
+#add-btn:hover {
+    background-color: rgb(79, 75, 75);
+    border: 2px solid rgb(79, 75, 75);
+}
+
+#task-list {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 5px;
+
+    height: 53vh;
+    width: 40rem;
+
+    background-color: #242528;
+    border: 2px solid #242528;
+    border-radius: 10px;
+
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    overflow-x: scroll;
+    margin-bottom: 5px;
+}
+
+#task-list li span {
+    width: 40rem;
+    height: 40px;
+    padding: 10px;
+    overflow-x: scroll;
+    flex-grow: 1; 
+    text-align: left;
+    cursor: pointer;
+}
+
+#task-list li button {
+    width: 50px;
+    height: 40px;
+    margin-left: auto; 
+    background-color: #242528;
+    border-radius: 5px;
+    border: 2px solid #242528;
+    font-size: 10px;
+    color: #C2BABA;
+
+    margin-left: 15px;
+}
+
+#task-list li button:hover {
+    background-color: rgb(79, 75, 75);
+    border: 2px solid rgb(79, 75, 75);
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
